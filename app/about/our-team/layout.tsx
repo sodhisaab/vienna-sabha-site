@@ -3,5 +3,5 @@ export default function OurTeamLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <section>{children}</section>;
+  return <section className="mt-8 sm:mt-12 ">{children}</section>;
 }

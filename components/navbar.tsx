@@ -22,8 +22,11 @@ import { ThemeSwitch } from "./theme-switch";
 
 export const Logo = () => {
   return (
-    <Link className="text-primary font-bold text-lg md:text-lg" href="/">
-      Shri Guru Ravidass Sabha Vienna
+    <Link
+      className="text-primary font-bold text-lg md:text-lg dark:text-slate-100"
+      href="/"
+    >
+      Vienna Sahba
     </Link>
   );
 };

@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export default function Example() {
   return (
-    <div className="">
+    <>
       <div className="mx-auto max-w-5xl lg:mx-0">
         <h1 className={`${title()} text-gray-900 dark:text-gray-100`}>
           Meet our Team
@@ -63,6 +63,6 @@ export default function Example() {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
