@@ -18,6 +18,7 @@ import {
   DropdownTrigger,
 } from "@heroui/dropdown";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { ThemeSwitch } from "./theme-switch";
 
 export const Logo = () => {
   return (
@@ -118,6 +119,7 @@ const Navbar = () => {
             </Link>
           </NavbarItem>
         ))}
+        <ThemeSwitch />
       </NavbarContent>
 
       <NavbarMenu>
