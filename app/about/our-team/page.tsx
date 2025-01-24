@@ -6,13 +6,15 @@ import { siteConfig } from "@/config/site";
 
 export default function Example() {
   return (
-    <div className="bg-white">
+    <div className="">
       <div className="mx-auto max-w-5xl lg:mx-0">
-        <h1 className={title()}>Meet our Team</h1>
-        <p className={subtitle()}>
+        <h1 className={`${title()} text-gray-900 dark:text-gray-100`}>
+          Meet our Team
+        </h1>
+        <p className={`${subtitle()} text-gray-800 dark:text-gray-300`}>
           &quot;Man changa to kathoti mein Ganga.&quot;
         </p>
-        <div className="text-lg/8 text-gray-600 space-y-6 mt-6">
+        <div className="text-lg/8 text-gray-600 dark:text-gray-400 space-y-6 mt-6">
           <p>
             At {siteConfig.name}, our team is the heart of everything we do. We
             are a group of passionate and dedicated individuals, working

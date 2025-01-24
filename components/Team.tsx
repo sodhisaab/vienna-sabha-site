@@ -35,8 +35,6 @@ const people = [
     imageUrl:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
   },
-
-  // More people...
 ];
 
 const Team = () => {
@@ -49,10 +47,12 @@ const Team = () => {
             src={person.imageUrl}
             className="aspect-3/2 w-full rounded-2xl object-cover"
           />
-          <h3 className="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">
+          <h3 className="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900 dark:text-gray-100">
             {person.name}
           </h3>
-          <p className="text-base/7 text-gray-600">{person.role}</p>
+          <p className="text-base/7 text-gray-600 dark:text-gray-400">
+            {person.role}
+          </p>
         </li>
       ))}
     </ul>
