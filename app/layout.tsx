@@ -10,6 +10,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
+import BGImage from "@/components/bg-image";
 
 export const metadata: Metadata = {
   title: {
@@ -46,7 +47,8 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl px-6 flex-grow">
+            <main className="container mx-auto w-full max-w-7xl px-6 flex-grow relative isolate">
+              <BGImage />
               {children}
             </main>
             <Footer />

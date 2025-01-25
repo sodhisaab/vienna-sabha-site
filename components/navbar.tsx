@@ -26,7 +26,7 @@ export const Logo = () => {
       className="text-primary font-bold text-lg md:text-lg dark:text-slate-100"
       href="/"
     >
-      Vienna Sahba
+      Shri Guru Ravidass Sabha Vienna
     </Link>
   );
 };
@@ -109,8 +109,13 @@ const Navbar = () => {
             }}
           >
             {dropDownMeunData.map(({ label, href }) => (
-              <DropdownItem key={href}>
-                <Link href={href}>{label}</Link>
+              <DropdownItem key={href} variant="bordered" className="p-0 ">
+                <Link
+                  href={href}
+                  className="w-full px-2 py-1 text-gray-900 dark:text-gray-300"
+                >
+                  {label}
+                </Link>
               </DropdownItem>
             ))}
           </DropdownMenu>

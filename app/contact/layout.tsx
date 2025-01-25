@@ -1,7 +1,7 @@
-export default function AboutLayout({
+export default function ContactLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <section className="max-w-[1280px] mx-auto my-0">{children}</section>;
+  return <section className="mt-8 sm:mt-12">{children}</section>;
 }
