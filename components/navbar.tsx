@@ -52,6 +52,10 @@ const Navbar = () => {
   ];
   const menuData = [
     {
+      label: "Gallery",
+      href: "/gallery",
+    },
+    {
       label: "Contact",
       href: "/contact",
     },
