@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
-import { title } from "@/components/primitives";
+
 import Mission from "@/components/mission";
 import Vision from "@/components/vision";
 import Purpose from "@/components/purpose";

@@ -2,10 +2,6 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import BGImage from "@/components/bg-image";
-
-/* <div className="relative isolate pt-6 w-full mb-8">
-        <BGImage /> */
 
 export default function ContactRoot() {
   return (
@@ -116,6 +112,7 @@ export default function ContactRoot() {
       </div>
       <div className="mt-10 shadow-lg h-[75vh]">
         <iframe
+          title="direction to the Shri Guru Ravidass Sabha Vienna."
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5318.723254945818!2d16.33276447645199!3d48.19965004683758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07f6c62fd8db%3A0xeda8893035411154!2sShri%20Guru%20Ravidass%20Temple%20Vienna!5e0!3m2!1sen!2sat!4v1737733609448!5m2!1sen!2sat"
           loading="lazy"
           className="w-full h-[75vh]"

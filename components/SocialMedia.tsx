@@ -7,6 +7,7 @@ const SocialMedia = () => {
     <div className="flex  space-x-4 sm:justify-end">
       <a
         target="_blank"
+        rel="noreferrer"
         href={links.x}
         className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
       >
@@ -26,6 +27,7 @@ const SocialMedia = () => {
       </a>
       <a
         target="_blank"
+        rel="noreferrer"
         href={links.instagram}
         className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
       >
@@ -44,6 +46,7 @@ const SocialMedia = () => {
 
       <a
         target="_blank"
+        rel="noreferrer"
         href={links.youtube}
         className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
       >
@@ -63,6 +66,7 @@ const SocialMedia = () => {
       </a>
       <a
         target="_blank"
+        rel="noreferrer"
         href={links.facebook}
         className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-indigo-600"
       >
