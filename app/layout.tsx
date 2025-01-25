@@ -11,6 +11,7 @@ import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import BGImage from "@/components/bg-image";
+import { ThemeSwitch } from "@/components/theme-switch";
 
 export const metadata: Metadata = {
   title: {
@@ -46,6 +47,9 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
+            <div className="fixed flex z-50 bottom-4 right-4 md:bottom-[60px] md:right-[60px] p-2 rounded-full shadow-lg bg-white dark:bg-gray-800 cursor-pointer">
+              <ThemeSwitch />
+            </div>
             <Navbar />
             <main className="container mx-auto w-full max-w-7xl px-6 flex-grow relative isolate">
               <BGImage />

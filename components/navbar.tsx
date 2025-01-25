@@ -18,12 +18,11 @@ import {
   DropdownTrigger,
 } from "@heroui/dropdown";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { ThemeSwitch } from "./theme-switch";
 
 export const Logo = () => {
   return (
     <Link
-      className="text-primary font-bold text-lg md:text-lg dark:text-slate-100"
+      className="text-primary font-bold text-sm sm:text-lg md:text-2xl lg:text-3xl dark:text-slate-100"
       href="/"
     >
       Shri Guru Ravidass Sabha Vienna
@@ -127,7 +126,6 @@ const Navbar = () => {
             </Link>
           </NavbarItem>
         ))}
-        <ThemeSwitch />
       </NavbarContent>
 
       <NavbarMenu>
