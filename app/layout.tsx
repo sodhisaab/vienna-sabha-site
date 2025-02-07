@@ -12,6 +12,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import BGImage from "@/components/bg-image";
 import { ThemeSwitch } from "@/components/theme-switch";
+import InfoModal from "@/components/modal";
 
 export const metadata: Metadata = {
   title: {
@@ -53,6 +54,7 @@ export default function RootLayout({
             <Navbar />
             <main className="container mx-auto w-full max-w-7xl px-6 flex-grow relative isolate">
               <BGImage />
+              <InfoModal />
               {children}
             </main>
             <Footer />
