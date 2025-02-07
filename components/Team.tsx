@@ -47,12 +47,10 @@ const Team = () => {
             className="aspect-3/2 w-full rounded-2xl object-cover"
           />
           <div className="absolute bottom-0 px-4 py-2 bg-gray-900/50 w-full rounded-bl-2xl rounded-br-2xl">
-            <h3 className="text-lg/8 font-semibold tracking-tight text-white dark:text-gray-100">
+            <h3 className="text-lg/8 font-semibold tracking-tight text-white">
               {person.name}
             </h3>
-            <p className="text-base/7 text-white dark:text-gray-400 ">
-              {person.role}
-            </p>
+            <p className="text-base/7 text-white">{person.role}</p>
           </div>
         </li>
       ))}

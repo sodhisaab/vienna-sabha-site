@@ -22,44 +22,43 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg mb-6 text-white">Useful links</h4>
             <ul className="space-y-4 pl-2">
               <li>
                 <Link
-                  href="/featured"
+                  href="/about/history"
                   className="text-gray-300 hover:text-white text-sm"
                 >
-                  Featured
+                  History
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/new-arrivals"
+                  href="/about/our-team"
                   className="text-gray-300 hover:text-white text-sm"
                 >
-                  New Arrivals
+                  Team
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg mb-6 text-white">Information</h4>
             <ul className="space-y-4 pl-2">
+              {" "}
               <li>
                 <Link
-                  href="/about-us"
+                  href="/gallery"
                   className="text-gray-300 hover:text-white text-sm"
                 >
-                  About Us
+                  Gallery
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/terms-and-conditions"
+                  href="/contact"
                   className="text-gray-300 hover:text-white text-sm"
                 >
-                  Terms &amp; Conditions
+                  Contact
                 </Link>
               </li>
             </ul>
