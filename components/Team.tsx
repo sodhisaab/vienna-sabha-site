@@ -1,58 +1,59 @@
-const people = [
+import Image from "next/image";
+
+const team = [
   {
     name: "Heaven Rattu",
     role: "President",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/team/heaven-rattu.jpg",
   },
   {
     name: "Prince Sodhi, MSc",
     role: "Vice President",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/team/prince-sodhi.jpg",
   },
   {
     name: "Gurminder Bhaura",
     role: "Secretary",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/team/gurminder-bhaura.jpg",
   },
   {
     name: "Ricky Jassal",
     role: "Vice Secretary",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/team/ricky-jassal.jpg",
   },
   {
     name: "Avtar Chand",
     role: "Treasurer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/team/avtar-chand.jpg",
   },
   {
     name: "Ajay Kumar Mahi",
     role: "Vice Treasurer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/team/ajay-kumar-mahi.jpg",
   },
 ];
 
 const Team = () => {
   return (
     <ul className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      {people.map((person, idx) => (
-        <li key={idx}>
-          <img
-            alt=""
+      {team.map((person, idx) => (
+        <li key={idx} className="relative">
+          <Image
+            alt={person.name}
+            width={100}
+            height={100}
             src={person.imageUrl}
+            loading="lazy"
             className="aspect-3/2 w-full rounded-2xl object-cover"
           />
-          <h3 className="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900 dark:text-gray-100">
-            {person.name}
-          </h3>
-          <p className="text-base/7 text-gray-600 dark:text-gray-400">
-            {person.role}
-          </p>
+          <div className="absolute bottom-0 px-4 py-2 bg-gray-900/50 w-full rounded-bl-2xl rounded-br-2xl">
+            <h3 className="text-lg/8 font-semibold tracking-tight text-white dark:text-gray-100">
+              {person.name}
+            </h3>
+            <p className="text-base/7 text-white dark:text-gray-400 ">
+              {person.role}
+            </p>
+          </div>
         </li>
       ))}
     </ul>
