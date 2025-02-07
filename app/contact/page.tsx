@@ -9,6 +9,11 @@ export default function ContactRoot() {
       <h1 className={`${title()} text-gray-900 dark:text-gray-100`}>
         Connect with Shri Guru Ravidass Sabha Vienna
       </h1>
+      <p className="my-4 font-semibold text-lg">
+        SHRI GURU RAVIDASS SABHA Andenken an Guru Ravidass + Amritbani Satguru
+        Ravidass Ji <br />
+        ZVR-Zahl: 590605775
+      </p>
 
       <div className=" text-lg/8 mt-6 max-w-4xl">
         <p className="text-gray-600 dark:text-gray-400">
@@ -35,7 +40,7 @@ export default function ContactRoot() {
       <div className="grid md:grid-cols-2 gap-8 items-start mt-12">
         <div className="space-y-8">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold text-indigo-900 dark:text-indigo-200 mb-6">
+            <h3 className="text-xl font-semibold text-indigo-900 dark:text-indigo-200 mb-4">
               Contact Information
             </h3>
 

@@ -22,7 +22,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 export const Logo = () => {
   return (
     <Link
-      className="text-primary font-bold text-sm sm:text-lg md:text-2xl lg:text-3xl dark:text-slate-100"
+      className="text-primary font-bold text-base sm:text-lg md:text-2xl lg:text-3xl dark:text-slate-100"
       href="/"
     >
       Shri Guru Ravidass Sabha Vienna
@@ -88,7 +88,7 @@ const Navbar = () => {
           <Logo />
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+      <NavbarContent className="hidden sm:flex gap-2" justify="end">
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
