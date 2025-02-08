@@ -1,10 +1,27 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
 
 import Mission from "@/components/mission";
 import Vision from "@/components/vision";
 import Purpose from "@/components/purpose";
+import SharedMetaData from "@/config/shared-metadata";
+
+const { home } = SharedMetaData;
+
+export const metadata: Metadata = {
+  title: home.title,
+  description: home.description,
+  authors: home.authors,
+  applicationName: home.siteName,
+  openGraph: {
+    type: "website",
+    title: home.title,
+    description: home.description,
+    images: home.images,
+  },
+};
 
 export default function Home() {
   return (
